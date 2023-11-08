@@ -2,7 +2,6 @@ import React from "react";
 import Modal from "../../ui/Modal.jsx";
 import CreateCabinForm from "./CreateCabinForm.jsx";
 import Button from "../../ui/Button.jsx";
-import CabinTable from "./CabinTable.jsx";
 
 const AddCabin = () => {
   return (
@@ -14,31 +13,14 @@ const AddCabin = () => {
         <CreateCabinForm />
       </Modal.Window>
 
-      <Modal.Open opens="table">
-        <Button>Show table</Button>
-      </Modal.Open>
-      <Modal.Window name="table">
-        <CabinTable />
-      </Modal.Window>
+      {/*<Modal.Open opens="table">*/}
+      {/*  <Button>Show table</Button>*/}
+      {/*</Modal.Open>*/}
+      {/*<Modal.Window name="table">*/}
+      {/*  <CabinTable />*/}
+      {/*</Modal.Window>*/}
     </Modal>
   );
 };
 
 export default AddCabin;
-
-// const AddCabin = () => {
-//   const [isOpenModal, setIsOpenModal] = useState(false);
-//
-//   return (
-//     <div>
-//       <Button onClick={() => setIsOpenModal((showForm) => !showForm)}>
-//         Add new cabin
-//       </Button>
-//       {isOpenModal && (
-//         <Modal onClose={() => setIsOpenModal(false)}>
-//           <CreateCabinForm onCloseModal={() => setIsOpenModal(false)} />
-//         </Modal>
-//       )}
-//     </div>
-//   );
-// };
