@@ -48,9 +48,9 @@ function BookingRow({
   },
 }) {
   const statusToTagName = {
-    unconfirmed: "blue",
     "checked-in": "green",
     "checked-out": "silver",
+    uncorfirmed: "blue",
   };
 
   return (
