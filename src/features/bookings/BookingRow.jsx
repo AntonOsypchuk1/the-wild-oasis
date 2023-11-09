@@ -53,8 +53,6 @@ function BookingRow({
     unconfirmed: "blue",
   };
 
-  console.log(status.replace(" ", ""));
-
   return (
     <Table.Row>
       <Cabin>{cabinName}</Cabin>
