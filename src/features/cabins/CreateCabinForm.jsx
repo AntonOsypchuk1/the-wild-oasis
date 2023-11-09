@@ -50,14 +50,11 @@ function CreateCabinForm({ cabinToEdit, onCloseModal }) {
   }
 
   function onError(error) {
-    // console.log(error);
+    console.log(error);
   }
 
   return (
-    <Form
-      onSubmit={handleSubmit(onSubmit, onError)}
-      type={onCloseModal ? "modal" : "regular"}
-    >
+    <Form type={onCloseModal ? "modal" : "regular"}>
       <FormRow label="Cabin name" error={errors?.name?.message}>
         <Input
           type="text"
@@ -129,7 +126,7 @@ function CreateCabinForm({ cabinToEdit, onCloseModal }) {
         />
       </FormRow>
 
-      <FormRow label="cabin photo" error={errors?.image?.message}>
+      <FormRow label="Cabin photo" error={errors?.image?.message}>
         <FileInput
           id="image"
           accept="image/*"
@@ -148,7 +145,7 @@ function CreateCabinForm({ cabinToEdit, onCloseModal }) {
         >
           Cancel
         </Button>
-        <Button disabled={isWorking}>
+        <Button disabled={isWorking} onClick={handleSubmit(onSubmit, onError)}>
           {isEditSession ? "Edit cabin" : "Create new cabin"}
         </Button>
       </FormRow>
