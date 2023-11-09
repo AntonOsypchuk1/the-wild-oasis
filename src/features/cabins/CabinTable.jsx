@@ -1,10 +1,10 @@
 import Spinner from "../../ui/Spinner.jsx";
-import CabinRow from "./CabinRow.jsx";
 import { useCabins } from "./useCabins.js";
-import Table from "../../ui/Table.jsx";
 import Menus from "../../ui/Menus.jsx";
 import { useSearchParams } from "react-router-dom";
 import Empty from "../../ui/Empty.jsx";
+import Table from "../../ui/Table.jsx";
+import CabinRow from "./CabinRow.jsx";
 
 const CabinTable = () => {
   const { isLoading, cabins } = useCabins();
