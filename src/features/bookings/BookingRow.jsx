@@ -5,9 +5,9 @@ import Tag from "../../ui/Tag.jsx";
 import Table from "../../ui/Table.jsx";
 
 import { formatCurrency, formatDistanceFromNow } from "../../utils/helpers.js";
+import { useNavigate } from "react-router-dom";
 import Menus from "../../ui/Menus.jsx";
 import { HiArrowDownOnSquare, HiEye } from "react-icons/hi2";
-import { useNavigate } from "react-router-dom";
 
 const Cabin = styled.div`
   font-size: 1.6rem;

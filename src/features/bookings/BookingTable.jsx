@@ -1,10 +1,10 @@
-import Table from "../../ui/Table.jsx";
 import Menus from "../../ui/Menus.jsx";
-import Empty from "../../ui/Empty.jsx";
 import { useBookings } from "./useBookings.js";
 import Spinner from "../../ui/Spinner.jsx";
-import BookingRow from "./BookingRow.jsx";
+import Empty from "../../ui/Empty.jsx";
+import Table from "../../ui/Table.jsx";
 import Pagination from "../../ui/Pagination.jsx";
+import BookingRow from "./BookingRow.jsx";
 
 function BookingTable() {
   const { isLoading, bookings, count } = useBookings();

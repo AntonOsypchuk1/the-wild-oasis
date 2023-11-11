@@ -1,7 +1,7 @@
-import Heading from "../ui/Heading";
 import Row from "../ui/Row";
-import BookingTable from "../features/bookings/BookingTable.jsx";
+import Heading from "../ui/Heading.jsx";
 import BookingTableOperations from "../features/bookings/BookingTableOperations.jsx";
+import BookingTable from "../features/bookings/BookingTable.jsx";
 
 function Bookings() {
   return (
