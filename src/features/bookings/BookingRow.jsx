@@ -9,9 +9,9 @@ import { useNavigate } from "react-router-dom";
 import Menus from "../../ui/Menus.jsx";
 import {
   HiArrowDownOnSquare,
-  HiArrowLeftOnRectangle,
   HiArrowUpOnSquare,
   HiEye,
+  HiTrash,
 } from "react-icons/hi2";
 import { useCheckOut } from "../check-in-out/useCheckOut.js";
 import Modal from "../../ui/Modal.jsx";
@@ -130,9 +130,7 @@ function BookingRow({
 
             {status === "checked-out" && (
               <Modal.Open opens="delete">
-                <Menus.Button icon={<HiArrowLeftOnRectangle />}>
-                  Delete
-                </Menus.Button>
+                <Menus.Button icon={<HiTrash />}>Delete</Menus.Button>
               </Modal.Open>
             )}
           </Menus.List>
